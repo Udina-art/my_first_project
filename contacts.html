@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — ТвойСайтe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- ФАВИКОНКА -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+    </div>
+
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <div class="floating-icons">
+        <i class="fas fa-paper-plane float-icon"></i>
+        <i class="fas fa-comments float-icon"></i>
+        <i class="fas fa-envelope float-icon"></i>
+        <i class="fas fa-phone float-icon"></i>
+        <i class="fas fa-code float-icon"></i>
+        <i class="fas fa-database float-icon"></i>
+        <i class="fas fa-lightbulb float-icon"></i>
+        <i class="fas fa-cogs float-icon"></i>
+        <i class="fas fa-atom float-icon"></i>
+        <i class="fas fa-dna float-icon"></i>
+    </div>
+
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="ТвойСайт" class="logo-img">
+                <span>ТвойСайт</span>
+            </a>
+            <ul class="nav">
+                <li><a href="index.html">Услуги</a></li>
+                <li><a href="portfolio.html">Примеры работ</a></li>
+                <li><a href="index.html#pricing">Цены</a></li>
+                <li><a href="contacts.html" class="active">Контакты</a></li>
+            </ul>
+            <a href="#" onclick="openModal(); return false;" class="header-cta">Обсудить задачу</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Меню">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero" style="padding-bottom: 40px;">
+        <div class="container">
+            <h1 class="fade-in"><span>Свяжись со мной</span></h1>
+            <p class="fade-in"> - Отвечаю в течение часа</p>
+        </div>
+    </section>
+
+    <section style="padding-top: 20px;">
+        <div class="container">
+            <div class="contacts-layout">
+
+                <!-- ЛЕВАЯ КОЛОНКА: форма -->
+                <div class="contacts-right">
+                    <div class="form-block fade-in">
+                        <h3 style="margin-bottom: 24px; font-size: 1.3rem;">Или оставь заявку</h3>
+                        <form action="https://formspree.io/f/xgaokdqo" method="POST">
+                            <div class="form-group">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="name" name="name" placeholder="Как к вам обращаться?" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact">Как связаться?</label>
+                                <input type="text" id="contact" name="contact" placeholder="Куда ответить?" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Номер телефона</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+7..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Опишите задачу</label>
+                                <textarea id="message" name="message" placeholder="Какой предмет? Что должен делать сайт?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                                <i class="fas fa-paper-plane"></i> Отправить заявку
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- ПРАВАЯ КОЛОНКА: способы связи -->
+                <div class="contacts-left">
+                    <h2 class="contacts-heading">Способы связи</h2>
+
+                    <a  target="_blank" class="contact-card fade-in">
+                        <i class="fab fa-telegram-plane"></i>
+                        <div>
+                            <h3>Telegram</h3>
+                            <p>@Chiabattata</p>
+                        </div>
+                    </a>
+
+                    <a  target="_blank" class="contact-card fade-in">
+                        <i class="fab fa-vk"></i>
+                        <div>
+                            <h3>ВКонтакте</h3>
+                            <p>@rinavirus</p>
+                        </div>
+                    </a>
+
+                    <a  class="contact-card fade-in">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>chabadv@mail.ru</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-inner">
+            
+            <p>© 2026 ТвойСайт. Сделано с любовью к науке.</p>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <h3>Хочешь сайт, но не знаешь, с чего начать?</h3>
+            <p style="margin-bottom: 16px;">Сайт сегодня — это не что-то сложное и дорогое. Это простой инструмент, который решает <strong>твою</strong> задачу.</p>
+            <p style="margin-bottom: 16px;">Нужно посчитать, сколько банок закрутить на зиму? Сделаю калькулятор.</p>
+            <p style="margin-bottom: 16px;">Собираешь данные для диплома? Создам платформу с автоматическими графиками.</p>
+            <p style="margin-bottom: 16px;">Придумал игру, но не знаешь, как её воплотить? Реализую.</p>
+            <p style="margin-bottom: 24px;">Хочешь запомнить классификацию? Сделаю интерактивный тренажёр.</p>
+            <p style="margin-bottom: 24px;"><strong>Главное — не бойся высказать свою задачу.</strong> Расскажи мне, что нужно — и я предложу решение, скажу цену и сроки.</p>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+                <a class="btn btn-outline" style="width:100%; justify-content:center;">
+                    <i class="fas fa-envelope"></i> chabadv@mail.ru
+                </a>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Примеры работ — ТвойСайт</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- ФАВИКОНКА -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Marck+Script&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+    </div>
+
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <div class="floating-icons">
+        <i class="fas fa-pills float-icon"></i>
+        <i class="fas fa-brain float-icon"></i>
+        <i class="fas fa-chart-bar float-icon"></i>
+        <i class="fas fa-flask float-icon"></i>
+        <i class="fas fa-code float-icon"></i>
+        <i class="fas fa-database float-icon"></i>
+        <i class="fas fa-lightbulb float-icon"></i>
+        <i class="fas fa-cogs float-icon"></i>
+        <i class="fas fa-atom float-icon"></i>
+        <i class="fas fa-dna float-icon"></i>
+        <i class="fas fa-microscope float-icon"></i>
+        <i class="fas fa-calculator float-icon"></i>
+    </div>
+
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="ТвойСайт" class="logo-img">
+                <span>ТвойСайт</span>
+            </a>
+            <ul class="nav">
+                <li><a href="index.html">Услуги</a></li>
+                <li><a href="portfolio.html" class="active">Примеры работ</a></li>
+                <li><a href="index.html#pricing">Цены</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <a href="#" onclick="openModal(); return false;" class="header-cta">Обсудить задачу</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Меню">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero" style="padding-bottom: 40px;">
+        <div class="container">
+            
+            <h1 class="fade-in">Мои <span>работы</span></h1>
+            <p class="fade-in"> - Проекты, которые уже помогают</p>
+        </div>
+    </section>
+
+        <section style="padding-top: 20px;">
+        <div class="container">
+            <div class="portfolio-grid">
+
+                <!-- Карточка 1: Тренажёр по фармакологии -->
+                <div class="portfolio-card fade-in">
+                    <div class="carousel" data-carousel>
+                        <div class="carousel-track">
+                            <div class="carousel-slide"><img src="images/project-5-1.jpeg" alt="Тренажёр по фармакологии — скриншот 1"></div>
+                            <div class="carousel-slide"><img src="images/project-5-2.jpeg" alt="Тренажёр по фармакологии — скриншот 2"></div>
+                            <div class="carousel-slide"><img src="images/project-5-3.jpeg" alt="Тренажёр по фармакологии — скриншот 3"></div>
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(this, -1)">‹</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(this, 1)">›</button>
+                        <div class="carousel-dots"></div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Тренажёр по фармакологии</h3>
+                        <p>Игра, где студенты перетаскивают препараты в нужную классификацию.</p>
+                        <span class="portfolio-tag">Запоминание в 2 раза быстрее</span><br>
+                        
+                    </div>
+                </div>
+
+                <!-- Карточка 2: Memory Lab -->
+                <div class="portfolio-card fade-in">
+                    <div class="carousel" data-carousel>
+                        <div class="carousel-track">
+                            <div class="carousel-slide"><img src="images/project-4-1.jpg" alt="Memory Lab — скриншот 1"></div>
+                            <div class="carousel-slide"><img src="images/project-4-2.jpg" alt="Memory Lab — скриншот 2"></div>
+                            <div class="carousel-slide"><img src="images/project-4-3.jpg" alt="Memory Lab — скриншот 3"></div>
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(this, -1)">‹</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(this, 1)">›</button>
+                        <div class="carousel-dots"></div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Memory Lab — тесты на память</h3>
+                        <p>Платформа с тестами (числа, слова)</p>
+                        <span class="portfolio-tag">Сбор данных</span><br>
+                        
+                    </div>
+                </div>
+
+                <!-- Карточка 3: Сбор данных для диплома -->
+                <div class="portfolio-card fade-in">
+                    <div class="carousel" data-carousel>
+                        <div class="carousel-track">
+                            <div class="carousel-slide"><img src="images/project-3-1.jpg" alt="Сбор данных — скриншот 1"></div>
+                            <div class="carousel-slide"><img src="images/project-3-2.jpg" alt="Сбор данных — скриншот 2"></div>
+                            <div class="carousel-slide"><img src="images/project-3-3.jpg" alt="Сбор данных — скриншот 3"></div>
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(this, -1)">‹</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(this, 1)">›</button>
+                        <div class="carousel-dots"></div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Сбор данных</h3>
+                        <p>Платформа, которая собирает ответы и строит графики корреляций.</p>
+                        <span class="portfolio-tag">Экономия недель обработки</span><br>
+                        
+                    </div>
+                </div>
+
+                <!-- Карточка 4: Тесты для школьников -->
+                <div class="portfolio-card fade-in">
+                    <div class="carousel" data-carousel>
+                        <div class="carousel-track">
+                            <div class="carousel-slide"><img src="images/project-1-1.png" alt="Тесты для школьников — скриншот 1"></div>
+                            <div class="carousel-slide"><img src="images/project-1-2.png" alt="Тесты для школьников — скриншот 2"></div>
+                            <div class="carousel-slide"><img src="images/project-1-3.png" alt="Тесты для школьников — скриншот 3"></div>
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(this, -1)">‹</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(this, 1)">›</button>
+                        <div class="carousel-dots"></div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Платформа для обработки аудио</h3>
+                        <p>Расшифровка аудио дорожки в текстовый документ</p>
+                        <span class="portfolio-tag">Облегчение работы врачам на 40%</span><br>
+                        
+                    </div>
+                </div>
+
+                <!-- Карточка 5: Личный кабинет репетитора -->
+                <div class="portfolio-card fade-in">
+                    <div class="carousel" data-carousel>
+                        <div class="carousel-track">
+                            <div class="carousel-slide"><img src="images/project-5-1.png" alt="Личный кабинет репетитора — скриншот 1"></div>
+                            <div class="carousel-slide"><img src="images/project-5-2.png" alt="Личный кабинет репетитора — скриншот 2"></div>
+                            <div class="carousel-slide"><img src="images/project-5-3.png" alt="Личный кабинет репетитора — скриншот 3"></div>
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(this, -1)">‹</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(this, 1)">›</button>
+                        <div class="carousel-dots"></div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Электронная карта пациента(прототип)</h3>
+                        <p>Платформа с отображением данных пациента</p>
+                        <span class="portfolio-tag">Автоматизация записей</span><br>
+                        
+                    </div>
+                </div>
+
+                <!-- Карточка 6: Платформа для научных опросов -->
+                <div class="portfolio-card fade-in">
+                    <div class="carousel" data-carousel>
+                        <div class="carousel-track">
+                            <div class="carousel-slide"><img src="images/project-6-1.png" alt="Научные опросы — скриншот 1"></div>                         
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(this, -1)">‹</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(this, 1)">›</button>
+                        <div class="carousel-dots"></div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Платформа для научных опросов</h3>
+                        <p>Сбор данных с автоматическим расчётом статистики.</p>
+                        <span class="portfolio-tag">Расчёт онлайн</span><br>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+            <!-- CTA: ДВА ОВАЛА СО СТРЕЛКОЙ -->
+    <section class="cta-flow-section">
+        <div class="container">
+            <div class="cta-flow fade-in">
+
+                <!-- Левый овал -->
+                <div class="flow-oval flow-oval-left">
+                    <span>Хочешь такой<br>же проект?</span>
+                </div>
+
+                <!-- Стрелка -->
+                <div class="flow-arrow">
+                    <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                        <path d="M 0 30 L 120 30 L 120 0 L 200 60 L 120 120 L 120 90 L 0 90 Z"
+                              fill="none" stroke="#6C5CE7" stroke-width="4" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+
+                <!-- Правый овал -->
+                <div class="flow-oval flow-oval-right">
+                    <span>Расскажи<br>о своей идее</span>
+                    <a href="#" onclick="openFormModal(); return false;" class="flow-btn">
+                        <i class="fas fa-paper-plane"></i> Обсудить
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-inner">
+            
+            <p>© 2026 ТвойСайт. Сделано с любовью к науке.</p>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <h3>Хочешь сайт, но не знаешь, с чего начать?</h3>
+            <p style="margin-bottom: 16px;">Сайт сегодня — это не что-то сложное и дорогое. Это простой инструмент, который решает <strong>твою</strong> задачу.</p>
+            <p style="margin-bottom: 16px;">Нужно посчитать, сколько банок закрутить на зиму? Сделаю калькулятор.</p>
+            <p style="margin-bottom: 16px;">Собираешь данные для диплома? Создам платформу с автоматическими графиками.</p>
+            <p style="margin-bottom: 16px;">Придумал игру, но не знаешь, как её воплотить? Реализую.</p>
+            <p style="margin-bottom: 24px;">Хочешь запомнить классификацию? Сделаю интерактивный тренажёр.</p>
+            <p style="margin-bottom: 24px;"><strong>Главное — не бойся высказать свою задачу.</strong> Расскажи мне, что нужно — и я предложу решение, скажу цену и сроки.</p>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+                <a class="btn btn-outline" style="width:100%; justify-content:center;" href="contacts.html" class="header-cta">chabadv@mail.ru</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ЛАЙТБОКС ДЛЯ ФОТО -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+        <button class="lightbox-close" onclick="closeLightbox(event)">✕</button>
+        <img src="" alt="" id="lightboxImg" class="lightbox-img">
+    </div>
+
+    <!-- МОДАЛЬНОЕ ОКНО С ФОРМОЙ -->
+    <div class="modal-overlay form-modal" id="formModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeFormModal()">✕</button>
+            <h3>Обсудим ваш проект</h3>
+            <p style="margin-bottom: 24px;">Заполните форму — я свяжусь с вами в течение часа</p>
+
+            <form action="https://formspree.io/f/xgaokdqo" method="POST">
+                <div class="form-group">
+                    <label for="modal-name">Ваше имя</label>
+                    <input type="text" id="modal-name" name="name" placeholder="Как к вам обращаться?" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-contact">Как связаться?</label>
+                    <input type="text" id="modal-contact" name="contact" placeholder="Telegram, ВК или email" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-phone">Номер телефона</label>
+                    <input type="tel" id="modal-phone" name="phone" placeholder="+7..." required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-message">Опишите задачу</label>
+                    <textarea id="modal-message" name="message" placeholder="Какой предмет? Что должен делать сайт?" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                    <i class="fas fa-paper-plane"></i> Отправить заявку
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

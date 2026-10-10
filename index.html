@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТвойСайт</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- ФАВИКОНКА -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ФОНОВЫЕ ПЯТНА -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+    </div>
+
+    <!-- ЛЕТАЮЩИЕ ЧАСТИЦЫ -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- ПЛАВАЮЩИЕ ИКОНКИ -->
+    <div class="floating-icons">
+        <i class="fas fa-brain float-icon"></i>
+        <i class="fas fa-pills float-icon"></i>
+        <i class="fas fa-chart-line float-icon"></i>
+        <i class="fas fa-book float-icon"></i>
+        <i class="fas fa-flask float-icon"></i>
+        <i class="fas fa-graduation-cap float-icon"></i>
+        <i class="fas fa-code float-icon"></i>
+        <i class="fas fa-database float-icon"></i>
+        <i class="fas fa-atom float-icon"></i>
+        <i class="fas fa-dna float-icon"></i>
+        <i class="fas fa-microscope float-icon"></i>
+        <i class="fas fa-calculator float-icon"></i>
+        <i class="fas fa-laptop-code float-icon"></i>
+        <i class="fas fa-lightbulb float-icon"></i>
+        <i class="fas fa-cogs float-icon"></i>
+        <i class="fas fa-chart-pie float-icon"></i>
+    </div>
+
+    <!-- ХЕДЕР -->
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="ТвойСайт" class="logo-img">
+                <span>ТвойСайт</span>
+            </a>
+            <ul class="nav">
+                <li><a href="index.html" class="active">Услуги</a></li>
+                <li><a href="portfolio.html">Примеры работ</a></li>
+                <li><a href="index.html#pricing">Цены</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <a href="contacts.html" class="header-cta">Обсудить задачу</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Меню">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero hero-section">
+        <div class="container">
+            <h1 class="fade-in">Сайт под <span>любую задачу</span><br>на заказ</h1>
+            <p class="fade-in">Создаю веб-сайты под ваши задачи — от изучения материала, тренировки навыков или сбора данных до нестандартных учебных проектов</p>
+            <div class="hero-buttons fade-in">
+                <a href="#" onclick="openFormModal(); return false;" class="header-cta">
+                    <i class="fas fa-comments"></i> Обсудить задачу
+                </a>
+            </div>
+            <div class="stats fade-in">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="20">0</div>
+                    <div class="stat-label">Проектов выполнено</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label">Дней среднее время</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">% довольных клиентов</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК "ОБО МНЕ" -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-block" id="aboutBlock">
+                <h2 class="about-title">Сайт</h2>
+                <div class="about-content">
+                    <div class="about-content">
+                    <p>— это просто инструмент, который решает конкретные задачи — <strong>твои</strong> задачи.</p>
+                    <p>Многие думают, что сайт — это что-то сложное и дорогое. Но это не так.</p>
+
+                    <p>Я не просто пишу код. Я <strong>понимаю </strong>предмет. И я <strong>умею слушать</strong>. </p>
+
+                    <h2 class="about-title">Что нужно от тебя?</h2>
+                    <p>Просто расскажи, что ты хочешь - не бойся, что идея покажется странной или простой - я предложу решение.</p>
+
+                    <p><strong>Любая задача достойна того, чтобы её решить</strong></p> 
+                </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- УСЛУГИ -->
+    <section id="services" style="padding-top: 20px; padding-bottom: 20px;">
+        <div class="container">
+            <h2 class="section-title fade-in">Кому подойдет?</h2>
+            <p class="section-subtitle fade-in">Интерактивные инструменты, которые реально работают</p>
+            <div class="services-grid">
+                <div class="service-card fade-in tooltip-card" data-tooltip="Яркое и красивое">
+                    <div class="service-icon">
+                        <img src="images/icon-1.jpg" alt="" class="service-img" width="32" height="32">
+                    </div>
+                    <h3>Творческие и «идейные» люди</h3>
+                    <p>• Превратить идею в рабочий прототип (игра, тренажёр, сервис).</p>
+                    <p>• Сделать модель для проверки гипотезы.</p>
+                    <p>• Создать инструмент под свою хобби-задачу (например, калькулятор для закрутки банок).</p>
+                    <p>• Почему им подойдёт: ты берёшь их идею и делаешь её реальной — быстро и недорого.</p>
+                </div>
+                <div class="service-card fade-in tooltip-card" data-tooltip="С авторизацией и статистикой">
+                    <div class="service-icon">
+                        <img src="images/icon-2.jpg" alt="" class="service-img" width="32" height="32">
+                    </div>
+                    <h3>Малый бизнес и самозанятые</h3>
+                    <p>• Калькулятор для расчёта стоимости услуг или материалов.</p>
+                    <p>• Сайт-визитка с портфолио.</p>
+                    <p>• Форма заявки с уведомлением в Telegram.</p>
+                    <p>• Мини-опросник для клиентов.</p>
+                </div>
+                <div class="service-card fade-in tooltip-card" data-tooltip="Для курсовых и дипломов">
+                    <div class="service-icon">
+                        <img src="images/icon-3.jpg" alt="" class="service-img" width="32" height="32">
+                    </div>
+                    <h3>Студенты и школьники</h3>
+                    <p>• Тренажёр для заучивания терминов, классификаций, дат, формул.</p>
+                    <p>• Платформа для сбора данных к курсовой/диплому (опрос + автоматические графики).</p>
+                    <p>• Интерактивные тесты для подготовки к экзаменам.</p>
+                    <p>• Учебная игра по предмету</p>
+                </div>
+                <div class="service-card fade-in tooltip-card" data-tooltip="Новое и необычное">
+                    <div class="service-icon">
+                        <img src="images/icon-4.jpg" alt="" class="service-img" width="32" height="32">
+                    </div>
+                    <h3>Учителя и преподаватели</h3>
+                    <p>• Интерактивные тесты с авторизацией и личным кабинетом ученика.</p>
+                    <p>• Тренажёры по своему предмету (drag-and-drop, карточки, классификации).</p>
+                    <p>• Платформа для сбора и анализа результатов класса.</p>
+                    <p>• Сайт-визитка с расписанием и записью на занятия.</p>
+                    <p>• Личный кабинет для домашних заданий.</p>
+                </div>
+                <div class="service-card fade-in tooltip-card" data-tooltip="Простое и понятное">
+                    <div class="service-icon">
+                        <img src="images/icon-5.png" alt="" class="service-img" width="32" height="32">
+                    </div>
+                    <h3>Репетиторы и специалисты</h3>
+                    <p>• Сайт-визитка с описанием услуг, ценами и отзывами.</p>
+                    <p>• Личный кабинет для учеников с заданиями и прогрессом.</p>
+                    <p>• Онлайн-запись на занятия.</p>
+                    <p>• Мини-тесты для диагностики уровня ученика.</p>
+                </div>
+                <div class="service-card fade-in tooltip-card" data-tooltip="Для точных расчетов">
+                    <div class="service-icon">
+                        <img src="images/icon-6.jpg" alt="" class="service-img" width="32" height="32">
+                    </div>
+                    <h3>Научные работники, аспиранты, исследователи</h3>
+                    <p>• Платформа для сбора данных с автоматической статистикой (t-критерий, корреляции, графики).</p>
+                    <p>• Онлайн-опросник с валидацией ответов.</p>
+                    <p>• Инструмент для обработки результатов эксперимента.</p>
+                    <p>• Панель исследователя с визуализацией данных.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ЦЕНЫ -->
+    <section id="pricing">
+        <div class="container">
+            <h2 class="section-title fade-in">Цены</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card fade-in">
+                    <h3>Базовый</h3>
+                    <div class="price">1000 ₽</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Сайт-визитка, 1 страница</li>
+                        <li><i class="fas fa-check"></i> Адаптив под телефон</li>
+                        <li><i class="fas fa-check"></i> Помощь с размещением</li>
+                    </ul>
+                    <a href="#" onclick="openFormModal(); return false;" class="btn btn-price" style="width:100%; justify-content:center;">
+                        <i class="fas fa-paper-plane"></i> Обсудить детали
+                    </a>
+                </div>
+                <div class="pricing-card featured fade-in">
+                    <h3>Студенческий</h3>
+                    <div class="price">1500–2500 ₽</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Тренажёр или тест</li>
+                        <li><i class="fas fa-check"></i> Авторизация и личный кабинет</li>
+                        <li><i class="fas fa-check"></i> 2 бесплатные правки</li>
+                    </ul>
+                    <a href="#" onclick="openFormModal(); return false;" class="btn btn-price" style="width:100%; justify-content:center;">
+                        <i class="fas fa-paper-plane"></i> Обсудить детали
+                    </a>
+                </div>
+                <div class="pricing-card fade-in">
+                    <h3>Профи</h3>
+                    <div class="price">от 3000 ₽</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Платформа сбора данных</li>
+                        <li><i class="fas fa-check"></i> Аналитика и графики</li>
+                        <li><i class="fas fa-check"></i> Расчёт статистики</li>
+                    </ul>
+                    <a href="#" onclick="openFormModal(); return false;" class="btn btn-price" style="width:100%; justify-content:center;">
+                        <i class="fas fa-paper-plane"></i> Обсудить детали
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="padding-top: 20px; padding-bottom: 40px;">
+        <div class="container">
+            <div class="cta-block fade-in">
+                <img src="images/cda.jpg" alt="" class="cta-bg">
+                <div class="cta-content">
+                    <h2>Нужен сайт?</h2>
+                    <p>Расскажи о своей задаче — предложу решение</p>
+                    <a href="contacts.html" class="header-cta">Обсудить задачу</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОДВАЛ -->
+    <footer>
+        <div class="container footer-inner">
+            
+            <p>© 2026 ТвойСайт. Сделано с любовью к науке.</p>
+        </div>
+    </footer>
+
+    <!-- МОДАЛЬНОЕ ОКНО -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <h3>Хочешь сайт, но не знаешь, с чего начать?</h3>
+            <p style="margin-bottom: 16px;">Сайт сегодня — это не что-то сложное и дорогое. Это простой инструмент, который решает <strong>твою</strong> задачу.</p>
+            <p style="margin-bottom: 16px;">Нужно посчитать, сколько банок закрутить на зиму? Сделаю калькулятор.</p>
+            <p style="margin-bottom: 16px;">Собираешь данные для диплома? Создам платформу с автоматическими графиками.</p>
+            <p style="margin-bottom: 16px;">Придумал игру, но не знаешь, как её воплотить? Реализую.</p>
+            <p style="margin-bottom: 24px;"><strong>Главное — не бойся высказать свою задачу.</strong> Расскажи мне, что нужно — и я предложу решение, скажу цену и сроки.</p>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+                <a class="btn btn-outline" style="width:100%; justify-content:center;">
+                    <i class="fas fa-envelope"></i> chabadv@mail.ru
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- МОДАЛЬНОЕ ОКНО С ФОРМОЙ -->
+    <div class="modal-overlay form-modal" id="formModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeFormModal()">✕</button>
+            <h3>Обсудим ваш проект</h3>
+           
+
+            <form action="https://formspree.io/f/xgaokdqo" method="POST">
+                <div class="form-group">
+                    <label for="modal-name">Ваше имя</label>
+                    <input type="text" id="modal-name" name="name" placeholder="Как к вам обращаться?" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-contact">Как связаться?</label>
+                    <input type="text" id="modal-contact" name="contact" placeholder="Telegram, ВК или email" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-phone">Номер телефона</label>
+                    <input type="tel" id="modal-phone" name="phone" placeholder="+7..." required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-message">Опишите задачу</label>
+                    <textarea id="modal-message" name="message" placeholder="Какой предмет? Что должен делать сайт?" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                    <i class="fas fa-paper-plane"></i> Отправить заявку
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
